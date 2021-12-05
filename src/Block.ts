@@ -42,7 +42,6 @@ export class Block {
     this.currentHash = this.generateHash()
 
     while (!/^0*$/.test(this.currentHash.substring(0, this.difficulty))) {
-      console.log('Mining hash', this.currentHash)
       this.nonce++
       this.currentHash = this.generateHash()
     }

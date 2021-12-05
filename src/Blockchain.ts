@@ -38,8 +38,6 @@ export class Blockchain {
         currentBlock.index === previousBlock.index + 1 &&
         currentBlock.previousHash === previousBlock.currentHash
 
-      console.log('hash valido', currentBlock.currentHash)
-
       return isValid
     }
   }
